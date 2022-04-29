@@ -35,8 +35,7 @@
                                 oneImagePercentage
                         )
                     if (index > imageLength - 1) index = 0
-                    if (index <= 0) index = imageLength - 1
-                    console.log(index)
+                    if (index < 0) index = imageLength - 1
                 }
                 break
             default:
