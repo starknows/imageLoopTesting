@@ -62,7 +62,6 @@
         multiple
         on:change={changeImageLoopImgs}
     />
-    <button on:click={() => index++} />
 </main>
 
 <style>
