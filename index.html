@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .loopContent {
+            width: 1280px;
+            aspect-ratio: 16/9;
+            background: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="loopContent">
+
+    </div>
+    <input id="imageUpload" type="file" multiple onchange="">
+</body>
+<script>
+    let loopContent = []
+    function changeImageLoopImgs(e) {
+        loopContent = []
+        e.target.files.forEach((item) => {
+            loopContent.push(URL.createObjectURL(item))
+        })
+    }
+</script>
+
+</html>
